@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(abc.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+
+}
+.sin-up-form{
+   width: 300px; 
+     box-shadow:0 0 3px 0 rgba(0,0,0.3) ;
+     background: #fff;
+     padding: 20px;
+     margin: 8% auto 0;
+     text-align: center;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius:10px ;
+     border-bottom-right-radius: 10px;
+     
+     
+
+}
+.sin-up-form h1{
+  color: #1c8adb;
+  margin-bottom:30px ;
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width:80% ;
+    border: 1px solid #999;
+    outline: none;
+    
+    text-align: center;
+    
+}
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sign-btn{
+    background-color:#1c8adb ;
+
+}
+.mobile-btn{
+    background-color:#21afde ;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.or{
+   background-color: #fff;
+   width: 30px;
+   margin: -19px auto 10px; 
+}
+img{
+    width: 70px;
+    margin-top: -50px;
+  
+  }
+  .hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(loginb.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+     
+}
+.login-f{
+    
+        width: 300px; 
+          box-shadow:0 0 3px 0 rgba(0,0,0.3) ;
+          background: #fff;
+          padding: 20px;
+          margin: 8% auto 0;
+          text-align: center;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+         border-bottom-left-radius:10px ;
+         border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+
+
+    

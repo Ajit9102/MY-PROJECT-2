@@ -1,0 +1,19 @@
+.aria-loc{
+    width: 330px;
+    border: 03px solid black;
+      padding: 08px;
+}
+input{
+    background: transparent;
+    border: 0px;
+    outline: none;
+    width: 300px;
+}
+.OAIE1 ._btn {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    cursor: pointer;
+    background-color: var(--primaryBaseText);
+    border-radius: 0 4px 4px 0;
+  }

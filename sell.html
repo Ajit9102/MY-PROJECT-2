@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sell</title>
+    <link rel="stylesheet" href="spage.css">
+   
+</head>
+<body>
+    <div id="res"></div> 
+    <div class="sell-form">
+        <h2>Sell Your Product</h2>
+        <form name="" id="" action="addlistdata.php" method="post">
+            
+           <input type="text" class="sell-inp" placeholder="SELLER NAME" required name="snm" id="snm">
+            
+
+            <input type="text" class="sell-inp" placeholder="PRODUCT" required name="pnm" id="pnm"><br>
+            <input type="text" class="sell-inp" placeholder="CATEGOTY" required name="cnm" id="cnm"><br>
+            <input type="text" class="sell-inp" placeholder="PRICE" required name="prnm" id="prnm"><BR>
+            
+            <input type="text" class="sell-inp" placeholder="MOBILE NO" required name="mbn" id="mbn"><BR>
+            <input type="text" clsaa="sell-inp" placeholder="LOCATION" required name="loc" id="loc"><br>
+            
+        
+            <input type="text" class="sell-inp" placeholder="ABOUT YOUR PRODUCT" style="height: 50px;width: 200px;" required name="abp" id="abp">
+            <h3>Upload upto 5 Photo</h3>
+            <input type="file" multiple class="sell-inp" name="img" id="img">
+            
+            
+            <br>
+            <button class="post-btn" type="submit" name="sbtn" id="sbtn">POST</button>
+            
+            
+            
+
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>  
+    <script>
+     $(document).ready(function(){$("lform").on("submit",function(e){
+       e.preventDefault();
+        formData.append('snm',$('#snm').val());
+        formData.append('pnm',$('#pnm').val());
+        formData.append('cnm',$('#cnm').val());
+        formData.append('prnm',$('#prnm').val());
+        formData.append('mbn',$('#mbn').val());
+        formData.append('loc',$('#loc').val());
+        formData.append('abp',$('#abp').val());
+        formData.append('abtn',$('#sbtn').val());
+        formData.append('img',$('#img').val());
+        $.ajax({
+            url:"addlistdata.php",
+            type:"post",
+            data:"formdata",
+            contentType:false,
+            processData:false,
+            success:function(data)
+            {
+                $('#res').trigger("reset");
+                $('#res').show();
+                $('#res').html(data);
+                $('#upload_file').val('');
+                setTimeout(){
+                ('#res').fadeOut('slow');
+                },4000);
+                $("lform").trigger("reset");
+                }
+
+            });
+        });
+       });
+      });
+    </script> 
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(hero.jpg);
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+
+.login-form{
+  width: 300px; 
+    box-shadow:0 0 3px 0 rgba(0,0,0.3) ;
+    background: #ffffffcf;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    display: block;
+    color: black;
+    backdrop-filter: blur(10px);
+
+}
+.log-inp{
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  width:80% ;
+  border: 1px solid #ea1414;
+  outline: none;
+  
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+hr{
+  margin-top: 20px;
+  width: 80%;
+}
+.or{
+  background-color: #fff;
+  width: 30px;
+  margin: -19px auto 10px;
+}
+.log-btn{
+  background-color: rgb(121, 121, 230);
+  height: 30px;
+  width: 70px;
+  border-color: #e889eb;
+}
+.or{
+  background-color: #d0f260;
+  width: 30px;
+  margin: -19px auto 10px; 
+}
+.login-form h1{
+  color: #1c8adb;
+  margin-bottom:30px ;
+  background-image: url(science.jpg.png);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+}
